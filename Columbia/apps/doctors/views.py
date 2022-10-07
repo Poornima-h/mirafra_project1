@@ -25,7 +25,7 @@ class DoctorsAPI(ModelViewSet):
              query=DoctorsSerializers(data=queryset,many=True)
              if query.is_valid():
                 return Response({"data":query.data})
-             return Response({"data":query.data})
+             return Response({"data":"invalid data"})
          except Exception as e:
              print(e)
              return Response({"message": "error occurred try, again later"})
