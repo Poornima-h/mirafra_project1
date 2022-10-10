@@ -10,4 +10,4 @@ class Products(models.Model):
         db_table = "products"
 
 class User(models.Model):
-    pass
+      pass
